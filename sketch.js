@@ -5,7 +5,7 @@ function setup() {
   orange = color(255, 145, 0);
   
   vid = createVideo("visual_.mp4");
-  vid.size(windowHeight*2,windowHeight*1.1);
+  vid.size(displayHeight*2,displayHeight*1.1);
   vid.volume(0);
   vid.loop();
   vid.hide();
