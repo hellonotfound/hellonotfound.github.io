@@ -4,7 +4,7 @@ function setup() {
   textAlign(CENTER);
   orange = color(255, 145, 0);
   
-  vid = createVideo("visual.mp4");
+  vid = createVideo("visual_.mp4");
   vid.size(windowWidth,windowHeight);
   vid.volume(0);
   vid.loop();
