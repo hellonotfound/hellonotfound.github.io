@@ -30,13 +30,15 @@ function draw() {
   textStyle(NORMAL);
   textSize(50);
   text("HELLONOTFOUND", width/2, height/2);
-  
+
+  /*
   textFont('Helvetica');
   noStroke();
   textStyle(ITALIC);
   fill(255, 196, 0);
   textSize(13);
   text("coming soon...", width/2, height-50);
+  */
 }
 
 function checkCursor(){
