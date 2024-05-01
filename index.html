@@ -1,15 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-  </body>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>hello?</title>
+<script src="https://kit.fontawesome.com/bc923469ba.js" crossorigin="anonymous"></script>
+<link href="video.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/xbg6fea.css">
+</head>
+<body style = "background-color:#000000">
+	<div class = "container">
+		<video class = "sign" id="neon" muted="muted" autoplay = "autoplay" loop = "loop">
+			<source src = "signloop.mp4" type = "video/mp4">
+		</video>
+		<video class = "layer" id = "background" muted = "muted" onclick = "this.play(); openNav();">
+			<source src = "output.webm" type = "video/webm">
+		</video>
+	</div>
+	<div>
+		<video class = "visual" id = "footage" muted = "muted" autoplay = "autoplay" loop = "loop">
+			<source src = "visual.webm" type = "video/webm">
+		</video>
+	</div>
+	<div id = "sideMenu" class = "menu">
+		<name><a href = "#index">[GLADYS LAM]</a></name>
+		<br><br><br>
+		<vg onmouseover = "playFootage()" onmouseout = "stopFootage()"><a href = "#">Videography<br/></a></vg>
+		<reel><a href = "#">CG Reel<br/></a></reel>
+		<portfolio><a href = "https://hellonotfound.artstation.com/">Portfolio<br/></a></portfolio>
+		<icons>
+			<icon-a>
+				<span style="font-size: 25px; color: orange;">
+					<a href = "https://www.artstation.com/hellonotfound"><i class="fa-brands fa-artstation"></i></a>
+				</span>
+			</icon-a>
+			<icon-b>
+				<span style="font-size: 25px; color: orange;">
+					<a href = "https://www.instagram.com/hellonotfound.art/"><i class="fa-brands fa-instagram"></i></a>
+				</span>
+			</icon-b>
+			<icon-c>
+				<span style="font-size: 25px; color: orange;">
+					<a href = "https://www.linkedin.com/in/gladyslamck/"><i class="fa-brands fa-linkedin"></i></a>
+				</span>
+			</icon-c>
+		</icons>
+	</div>
+</body>
+<script>
+	var targetVid = document.getElementById("footage");
+	var targetLink = document.getElementsById("sideMenu");
+	document.getElementsById("sideMenu").addEventListener("mouseover", mouseOver);
+	function openNav() {
+		document.getElementById("sideMenu").style.width = "40vw";
+	}
+	function playFootage() {
+		document.getElementById("footage").style.display = "block";
+	} 
+	function stopFootage() {
+		document.getElementById("footage").style.display = "none";
+	} 
+</script>
 </html>

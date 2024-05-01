@@ -1,0 +1,133 @@
+@charset "UTF-8";
+.video-container{
+	position: relative;
+}
+
+body{
+	height: 100%;
+}
+
+.layer{
+	width: 99vw;
+	height: 95vh;
+	object-fit: cover;
+	border-radius: 1px;
+	position: absolute;
+}
+
+.visual{
+	width: 99vw;
+	height: 99vh;
+	object-fit: cover;
+	border-radius: 1px;
+	position: absolute;
+	opacity: 0.7;
+	display: none;
+}
+
+.sign{
+	display: flex;
+    width: 50vw;
+    height: 30vh;
+    position: absolute;
+	top: 25vh;
+	left: 24.5vw;
+}
+
+.menu{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	line-height: 2;
+	padding-top: 100px;
+	padding-left: 100px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: "input-mono";
+	font-weight: 30;
+	display: block;
+	white-space: initial;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.0) 70%);
+	animation: fadeIn 5s;
+}
+
+.menu name{
+	animation: fadeIn 5s;
+}
+
+.menu vg{
+	animation: fadeIn 6s;
+}
+
+.menu reel{
+	animation: fadeIn 7s;
+}
+
+.menu portfolio{
+	animation: fadeIn 8s;
+}
+
+.icons {
+	padding-bottom: 200px;
+}
+
+.icons:hover{
+	curosr: pointer;
+}
+
+icon-a {
+	animation: fadeIn 9s;
+}
+
+icon-b {
+	animation: fadeIn 10s;
+}
+
+icon-c {
+	animation: fadeIn 11s;
+}
+
+a {
+    color: #ffa200;
+    text-decoration: none;
+}
+
+.menu name:hover{
+	color: white;
+    cursor: pointer;  
+	dispaly: block;
+}
+
+.menu vg:hover{
+    color: #ffa200;; 
+    text-decoration: underline; 
+    cursor: pointer;  
+	dispaly: block;
+}
+
+.menu reel:hover {
+    color: #ffa200;; 
+    text-decoration: underline; 
+    cursor: pointer;  
+}
+
+.menu portfolio:hover {
+    color: #ffa200;; 
+    text-decoration: underline; 
+    cursor:pointer;  
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes menuOp {
+	40% { opacity: 0; }
+	100% { opacity: 1; }
+}
