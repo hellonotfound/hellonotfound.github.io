@@ -15,6 +15,10 @@ body{
 	position: absolute;
 }
 
+.layer::-webkit-media-controls-start-playback-button {
+    display: none;
+}
+
 .visual{
 	width: 99vw;
 	height: 99vh;
