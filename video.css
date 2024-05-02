@@ -15,10 +15,6 @@ body{
 	position: absolute;
 }
 
-.layer::-webkit-media-controls-start-playback-button {
-    display: none;
-}
-
 .visual{
 	width: 99vw;
 	height: 99vh;
@@ -42,7 +38,7 @@ body{
 	height: 100%;
 	width: 0;
 	position: fixed;
-	z-index: 2;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	overflow-x: hidden;
@@ -103,26 +99,24 @@ a {
 .menu name:hover{
 	color: white;
     cursor: pointer;  
-	display: block;
 }
 
 .menu vg:hover{
-    color: #ffa200;; 
+    color: #ffa200; 
     text-decoration: underline; 
     cursor: pointer;  
-	display: block;
 }
 
 .menu reel:hover {
-    color: #ffa200;; 
+    color: #ffa200;
     text-decoration: underline; 
     cursor: pointer;  
 }
 
 .menu portfolio:hover {
-    color: #ffa200;; 
+    color: #ffa200; 
     text-decoration: underline; 
-    cursor:pointer;  
+    cursor: pointer;  
 }
 
 @keyframes fadeIn {
