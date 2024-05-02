@@ -13,7 +13,18 @@
 			<source src = "signloop.mp4" type = "video/mp4">
 		</video>
 		<video class = "layer" id = "background" muted = "muted" onclick = "this.play(); openNav();">
-			<source src = "output.webm" type = "video/webm">
+			<!-- in JavaScript -->
+			<script>
+				function supportsHEVCAlpha() {	
+					const navigator = window.navigator;
+					const ua = navigator.userAgent.toLowerCase();
+					const hasMediaCapabilities = !!(navigator.mediaCapabilities && navigator.mediaCapabilities.decodingInfo);
+					const isSafari = ((ua.indexOf('safari') != -1) && (!(ua.indexOf('chrome')!= -1) && (ua.indexOf('version/')!= -1)));
+					return isSafari && hasMediaCapabilities;
+				}
+				const player = document.getElementById('background');
+				player.src = supportsHEVCAlpha() ? 'output.mov' : 'output.webm';
+			</script>
 		</video>
 	</div>
 	<div>
