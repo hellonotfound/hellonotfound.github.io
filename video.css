@@ -80,7 +80,7 @@ body{
 }
 
 .icons:hover{
-	curosr: pointer;
+	cursor: pointer;
 }
 
 icon-a {
@@ -103,14 +103,14 @@ a {
 .menu name:hover{
 	color: white;
     cursor: pointer;  
-	dispaly: block;
+	display: block;
 }
 
 .menu vg:hover{
     color: #ffa200;; 
     text-decoration: underline; 
     cursor: pointer;  
-	dispaly: block;
+	display: block;
 }
 
 .menu reel:hover {
