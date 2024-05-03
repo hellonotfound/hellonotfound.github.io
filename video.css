@@ -59,15 +59,15 @@ body{
 	animation: fadeIn 5s;
 }
 
-.menu vg{
+.menu reel{
 	animation: fadeIn 6s;
 }
 
-.menu reel{
+.menu thp{
 	animation: fadeIn 7s;
 }
 
-.menu portfolio{
+.menu crp{
 	animation: fadeIn 8s;
 }
 
@@ -101,19 +101,19 @@ a {
     cursor: pointer;  
 }
 
-.menu vg:hover{
-    color: #ffa200; 
-    text-decoration: underline; 
-    cursor: pointer;  
-}
-
 .menu reel:hover {
     color: #ffa200;
     text-decoration: underline; 
     cursor: pointer;  
 }
 
-.menu portfolio:hover {
+.menu thp:hover{
+    color: #ffa200; 
+    text-decoration: underline; 
+    cursor: pointer;  
+}
+
+.menu crp:hover {
     color: #ffa200; 
     text-decoration: underline; 
     cursor: pointer;  
